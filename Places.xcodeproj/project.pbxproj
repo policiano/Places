@@ -18,6 +18,7 @@
 		35FA509E24BD3C7000AC370A /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA509C24BD3C7000AC370A /* Strings+Generated.swift */; };
 		35FA50A224BD3CC400AC370A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA50A124BD3CC400AC370A /* DetailsViewController.swift */; };
 		35FA50A624BD3F3C00AC370A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FA50A524BD3F3C00AC370A /* Assets.xcassets */; };
+		35FA50AD24BD454200AC370A /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA50AC24BD454200AC370A /* UIColor+Theme.swift */; };
 		57FA448DC8B8F0494593035B /* Pods_Places.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F58F5EC4483AE1B033EAA84 /* Pods_Places.framework */; };
 		98E7FE03E52A7B387396E212 /* Pods_Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF168A7826B50F27DEB6FFBF /* Pods_Presentation.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		35FA50A124BD3CC400AC370A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		35FA50A524BD3F3C00AC370A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35FA50A724BD40CB00AC370A /* Anchorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Anchorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35FA50AC24BD454200AC370A /* UIColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		3829D2D54FE8539C91060DF1 /* Pods-Presentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.debug.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.debug.xcconfig"; sourceTree = "<group>"; };
 		3F58F5EC4483AE1B033EAA84 /* Pods_Places.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Places.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E5A9E505CE32935D04BC59 /* Pods-Presentation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.release.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		35FA508824BD3A9300AC370A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				35FA50AB24BD452500AC370A /* Theme */,
 				35FA50A024BD3C9800AC370A /* Widgets */,
 				35FA509F24BD3C9000AC370A /* Scenes */,
 				35FA509824BD3BC200AC370A /* Generated */,
@@ -191,6 +194,14 @@
 				35FA50A524BD3F3C00AC370A /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		35FA50AB24BD452500AC370A /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				35FA50AC24BD454200AC370A /* UIColor+Theme.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		6D8F5F9357E13C65FB2CA615 /* Pods */ = {
@@ -433,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35FA509E24BD3C7000AC370A /* Strings+Generated.swift in Sources */,
+				35FA50AD24BD454200AC370A /* UIColor+Theme.swift in Sources */,
 				35FA509D24BD3C7000AC370A /* Assets+Generated.swift in Sources */,
 				35FA50A224BD3CC400AC370A /* DetailsViewController.swift in Sources */,
 			);
