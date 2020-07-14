@@ -1,3 +1,4 @@
+import Anchorage
 import UIKit
 
 public final class DetailsViewController: UIViewController {
@@ -11,5 +12,7 @@ public final class DetailsViewController: UIViewController {
         title = "Details"
         view.backgroundColor = .white
         view.addSubview(label)
+
+        label.edgeAnchors == view.edgeAnchors
     }
 }
