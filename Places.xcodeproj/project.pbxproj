@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		3540BF9324BD323200BB7C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540BF9224BD323200BB7C78 /* AppDelegate.swift */; };
 		3540BF9F24BD323300BB7C78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3540BF9D24BD323300BB7C78 /* LaunchScreen.storyboard */; };
+		35719DC624BE58E400E80812 /* HomeCollectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DC524BE58E400E80812 /* HomeCollectionViewControllerTests.swift */; };
+		35719DCA24BE662A00E80812 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DC924BE662A00E80812 /* HomeModels.swift */; };
+		35719DCD24BE663E00E80812 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DCC24BE663E00E80812 /* HomePresenter.swift */; };
+		35719DCF24BE664E00E80812 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DCE24BE664E00E80812 /* HomeCollectionViewController.swift */; };
+		35719DD224BE66BB00E80812 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DD124BE66BB00E80812 /* CustomViewController.swift */; };
 		35FA50A624BD3F3C00AC370A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FA50A524BD3F3C00AC370A /* Assets.xcassets */; };
 		35FA50D024BD60C500AC370A /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA50C724BD60C500AC370A /* Presentation.framework */; };
 		35FA50DC24BD60C600AC370A /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA50C724BD60C500AC370A /* Presentation.framework */; };
@@ -159,6 +164,11 @@
 		3540BF8F24BD323200BB7C78 /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3540BF9224BD323200BB7C78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3540BF9E24BD323300BB7C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35719DC524BE58E400E80812 /* HomeCollectionViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewControllerTests.swift; sourceTree = "<group>"; };
+		35719DC924BE662A00E80812 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		35719DCC24BE663E00E80812 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		35719DCE24BE664E00E80812 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		35719DD124BE66BB00E80812 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		35FA50A524BD3F3C00AC370A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35FA50A724BD40CB00AC370A /* Anchorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Anchorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FA50C724BD60C500AC370A /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -307,6 +317,40 @@
 			path = Places;
 			sourceTree = "<group>";
 		};
+		35719DC324BE58C200E80812 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				35719DC424BE58CC00E80812 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		35719DC424BE58CC00E80812 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				35719DC524BE58E400E80812 /* HomeCollectionViewControllerTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		35719DC824BE661E00E80812 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				35719DC924BE662A00E80812 /* HomeModels.swift */,
+				35719DCC24BE663E00E80812 /* HomePresenter.swift */,
+				35719DCE24BE664E00E80812 /* HomeCollectionViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		35719DD024BE66AB00E80812 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				35719DD124BE66BB00E80812 /* CustomViewController.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		35FA50A424BD3F2000AC370A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +373,7 @@
 		35FA50E424BD62CA00AC370A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				35719DC324BE58C200E80812 /* Scenes */,
 				35FA50FD24BD6B9D00AC370A /* Theme */,
 			);
 			path = Tests;
@@ -337,6 +382,7 @@
 		35FA50E824BD63B100AC370A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				35719DD024BE66AB00E80812 /* Utils */,
 				35FA50E924BD643300AC370A /* Generated */,
 				35FA50F024BD643300AC370A /* Scenes */,
 				35FA50EC24BD643300AC370A /* Theme */,
@@ -374,6 +420,7 @@
 		35FA50F024BD643300AC370A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				35719DC824BE661E00E80812 /* Home */,
 				35FA50F124BD643300AC370A /* Details */,
 			);
 			path = Scenes;
@@ -933,12 +980,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35719DCF24BE664E00E80812 /* HomeCollectionViewController.swift in Sources */,
 				35FA50F624BD643300AC370A /* UIFont+Theme.swift in Sources */,
 				35FA50F524BD643300AC370A /* UIColor+Theme.swift in Sources */,
 				35FA50F424BD643300AC370A /* Strings+Generated.swift in Sources */,
 				35FA50F324BD643300AC370A /* Assets+Generated.swift in Sources */,
 				35FA510E24BD715E00AC370A /* Fonts+Generated.swift in Sources */,
 				35FA50F724BD643300AC370A /* DetailsViewController.swift in Sources */,
+				35719DD224BE66BB00E80812 /* CustomViewController.swift in Sources */,
+				35719DCA24BE662A00E80812 /* HomeModels.swift in Sources */,
+				35719DCD24BE663E00E80812 /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -948,6 +999,7 @@
 			files = (
 				35FA510F24BD715E00AC370A /* Fonts+Generated.swift in Sources */,
 				35FA50FF24BD6B9D00AC370A /* UIFontThemeTests.swift in Sources */,
+				35719DC624BE58E400E80812 /* HomeCollectionViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
