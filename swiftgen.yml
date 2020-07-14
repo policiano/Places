@@ -4,7 +4,7 @@
 ##   Every input/output paths in the rest of the config will then be expressed relative to these.
 ##   Those two top-level keys are optional and default to "." (the directory of the config file).
 input_dir: Presentation/Resources
-output_dir: Presentation/Generated/
+output_dir: Presentation/Sources/Generated/
 
 
 ## Generate constants for your localized strings.
@@ -55,3 +55,9 @@ xcassets:
 ##
 ## For more info, use `swiftgen config doc` to open the full documentation on GitHub.
 ## https://github.com/SwiftGen/SwiftGen/tree/6.2.1/Documentation/
+
+fonts:
+  inputs: Fonts/
+  outputs:
+    templateName: swift5
+    output: Fonts+Generated.swift

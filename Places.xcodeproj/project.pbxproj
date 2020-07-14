@@ -20,7 +20,17 @@
 		35FA50F724BD643300AC370A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA50F224BD643300AC370A /* DetailsViewController.swift */; };
 		35FA50FB24BD6AE600AC370A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FA50F924BD6AE600AC370A /* Assets.xcassets */; };
 		35FA50FC24BD6AE600AC370A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35FA50FA24BD6AE600AC370A /* Localizable.strings */; };
-		35FA50FF24BD6B9D00AC370A /* FontWeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA50FE24BD6B9D00AC370A /* FontWeightTests.swift */; };
+		35FA50FF24BD6B9D00AC370A /* UIFontThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA50FE24BD6B9D00AC370A /* UIFontThemeTests.swift */; };
+		35FA510424BD6F6700AC370A /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FA510124BD6F6700AC370A /* OpenSans-Light.ttf */; };
+		35FA510524BD6F6700AC370A /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FA510124BD6F6700AC370A /* OpenSans-Light.ttf */; };
+		35FA510624BD6F6700AC370A /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FA510224BD6F6700AC370A /* OpenSans-SemiBold.ttf */; };
+		35FA510724BD6F6700AC370A /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FA510224BD6F6700AC370A /* OpenSans-SemiBold.ttf */; };
+		35FA510824BD6F6700AC370A /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FA510324BD6F6700AC370A /* OpenSans-Regular.ttf */; };
+		35FA510924BD6F6700AC370A /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FA510324BD6F6700AC370A /* OpenSans-Regular.ttf */; };
+		35FA510B24BD703000AC370A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35FA510A24BD703000AC370A /* Info.plist */; };
+		35FA510C24BD703000AC370A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35FA510A24BD703000AC370A /* Info.plist */; };
+		35FA510E24BD715E00AC370A /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA510D24BD715E00AC370A /* Fonts+Generated.swift */; };
+		35FA510F24BD715E00AC370A /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA510D24BD715E00AC370A /* Fonts+Generated.swift */; };
 		57FA448DC8B8F0494593035B /* Pods_Places.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F58F5EC4483AE1B033EAA84 /* Pods_Places.framework */; };
 		EB8D40AED30EC39FE1FD123F /* Pods_Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF168A7826B50F27DEB6FFBF /* Pods_Presentation.framework */; };
 /* End PBXBuildFile section */
@@ -79,7 +89,12 @@
 		35FA50F224BD643300AC370A /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		35FA50F924BD6AE600AC370A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35FA50FA24BD6AE600AC370A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		35FA50FE24BD6B9D00AC370A /* FontWeightTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontWeightTests.swift; sourceTree = "<group>"; };
+		35FA50FE24BD6B9D00AC370A /* UIFontThemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontThemeTests.swift; sourceTree = "<group>"; };
+		35FA510124BD6F6700AC370A /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		35FA510224BD6F6700AC370A /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		35FA510324BD6F6700AC370A /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		35FA510A24BD703000AC370A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35FA510D24BD715E00AC370A /* Fonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fonts+Generated.swift"; sourceTree = "<group>"; };
 		3829D2D54FE8539C91060DF1 /* Pods-Presentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.debug.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.debug.xcconfig"; sourceTree = "<group>"; };
 		3F58F5EC4483AE1B033EAA84 /* Pods_Places.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Places.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E5A9E505CE32935D04BC59 /* Pods-Presentation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.release.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.release.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +212,7 @@
 		35FA50E924BD643300AC370A /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				35FA510D24BD715E00AC370A /* Fonts+Generated.swift */,
 				35FA50EA24BD643300AC370A /* Assets+Generated.swift */,
 				35FA50EB24BD643300AC370A /* Strings+Generated.swift */,
 			);
@@ -238,7 +254,9 @@
 		35FA50F824BD6AE600AC370A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				35FA510024BD6F4800AC370A /* Fonts */,
 				35FA50F924BD6AE600AC370A /* Assets.xcassets */,
+				35FA510A24BD703000AC370A /* Info.plist */,
 				35FA50FA24BD6AE600AC370A /* Localizable.strings */,
 			);
 			path = Resources;
@@ -247,9 +265,19 @@
 		35FA50FD24BD6B9D00AC370A /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				35FA50FE24BD6B9D00AC370A /* FontWeightTests.swift */,
+				35FA50FE24BD6B9D00AC370A /* UIFontThemeTests.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		35FA510024BD6F4800AC370A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				35FA510124BD6F6700AC370A /* OpenSans-Light.ttf */,
+				35FA510324BD6F6700AC370A /* OpenSans-Regular.ttf */,
+				35FA510224BD6F6700AC370A /* OpenSans-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		6D8F5F9357E13C65FB2CA615 /* Pods */ = {
@@ -394,6 +422,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FA510824BD6F6700AC370A /* OpenSans-Regular.ttf in Resources */,
+				35FA510624BD6F6700AC370A /* OpenSans-SemiBold.ttf in Resources */,
+				35FA510B24BD703000AC370A /* Info.plist in Resources */,
+				35FA510424BD6F6700AC370A /* OpenSans-Light.ttf in Resources */,
 				35FA50FB24BD6AE600AC370A /* Assets.xcassets in Resources */,
 				35FA50FC24BD6AE600AC370A /* Localizable.strings in Resources */,
 			);
@@ -403,6 +435,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FA510C24BD703000AC370A /* Info.plist in Resources */,
+				35FA510724BD6F6700AC370A /* OpenSans-SemiBold.ttf in Resources */,
+				35FA510924BD6F6700AC370A /* OpenSans-Regular.ttf in Resources */,
+				35FA510524BD6F6700AC370A /* OpenSans-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +543,7 @@
 				35FA50F524BD643300AC370A /* UIColor+Theme.swift in Sources */,
 				35FA50F424BD643300AC370A /* Strings+Generated.swift in Sources */,
 				35FA50F324BD643300AC370A /* Assets+Generated.swift in Sources */,
+				35FA510E24BD715E00AC370A /* Fonts+Generated.swift in Sources */,
 				35FA50F724BD643300AC370A /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,7 +552,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35FA50FF24BD6B9D00AC370A /* FontWeightTests.swift in Sources */,
+				35FA510F24BD715E00AC370A /* Fonts+Generated.swift in Sources */,
+				35FA50FF24BD6B9D00AC370A /* UIFontThemeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,7 +754,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Presentation/Info.plist;
+				INFOPLIST_FILE = Presentation/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -744,7 +782,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Presentation/Info.plist;
+				INFOPLIST_FILE = Presentation/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
