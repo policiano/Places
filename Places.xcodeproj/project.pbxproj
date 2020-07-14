@@ -40,6 +40,16 @@
 		35FA513B24BD7B1B00AC370A /* DateUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA513A24BD7B1B00AC370A /* DateUtilsTests.swift */; };
 		35FA513E24BD810F00AC370A /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA513D24BD810F00AC370A /* Date+Utils.swift */; };
 		35FA514724BD85A800AC370A /* ScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA514524BD857500AC370A /* ScheduleTests.swift */; };
+		35FA515624BDE89F00AC370A /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA514D24BDE89E00AC370A /* Repository.framework */; };
+		35FA516224BDE89F00AC370A /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA514D24BDE89E00AC370A /* Repository.framework */; };
+		35FA516324BDE89F00AC370A /* Repository.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA514D24BDE89E00AC370A /* Repository.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35FA517124BDE90B00AC370A /* Repository.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FA516B24BDE90B00AC370A /* Repository.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35FA517224BDE90B00AC370A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35FA516C24BDE90B00AC370A /* Info.plist */; };
+		35FA517524BDE91000AC370A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35FA516F24BDE90B00AC370A /* Info.plist */; };
+		35FA517924BDEB5200AC370A /* RespoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA517824BDEB5200AC370A /* RespoTests.swift */; };
+		35FA517B24BDED7B00AC370A /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA514D24BDE89E00AC370A /* Repository.framework */; };
+		35FA517C24BDED7B00AC370A /* Repository.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA514D24BDE89E00AC370A /* Repository.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35FA518124BDEEFF00AC370A /* Presentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FA518024BDEEFF00AC370A /* Presentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57FA448DC8B8F0494593035B /* Pods_Places.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F58F5EC4483AE1B033EAA84 /* Pods_Places.framework */; };
 		EB8D40AED30EC39FE1FD123F /* Pods_Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF168A7826B50F27DEB6FFBF /* Pods_Presentation.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +97,34 @@
 			remoteGlobalIDString = 35FA511524BD76F400AC370A;
 			remoteInfo = Domain;
 		};
+		35FA515724BDE89F00AC370A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3540BF8724BD323200BB7C78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35FA514C24BDE89E00AC370A;
+			remoteInfo = Repository;
+		};
+		35FA515924BDE89F00AC370A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3540BF8724BD323200BB7C78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3540BF8E24BD323200BB7C78;
+			remoteInfo = Places;
+		};
+		35FA516024BDE89F00AC370A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3540BF8724BD323200BB7C78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35FA514C24BDE89E00AC370A;
+			remoteInfo = Repository;
+		};
+		35FA517D24BDED7B00AC370A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3540BF8724BD323200BB7C78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35FA514C24BDE89E00AC370A;
+			remoteInfo = Repository;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -98,6 +136,18 @@
 			files = (
 				35FA512C24BD76F500AC370A /* Domain.framework in Embed Frameworks */,
 				35FA50DD24BD60C600AC370A /* Presentation.framework in Embed Frameworks */,
+				35FA516324BDE89F00AC370A /* Repository.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FA517F24BDED7B00AC370A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				35FA517C24BDED7B00AC370A /* Repository.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +185,13 @@
 		35FA513A24BD7B1B00AC370A /* DateUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilsTests.swift; sourceTree = "<group>"; };
 		35FA513D24BD810F00AC370A /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
 		35FA514524BD857500AC370A /* ScheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTests.swift; sourceTree = "<group>"; };
+		35FA514D24BDE89E00AC370A /* Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35FA515524BDE89F00AC370A /* RepositoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepositoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35FA516B24BDE90B00AC370A /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
+		35FA516C24BDE90B00AC370A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35FA516F24BDE90B00AC370A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35FA517824BDEB5200AC370A /* RespoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespoTests.swift; sourceTree = "<group>"; };
+		35FA518024BDEEFF00AC370A /* Presentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presentation.h; sourceTree = "<group>"; };
 		3829D2D54FE8539C91060DF1 /* Pods-Presentation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.debug.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.debug.xcconfig"; sourceTree = "<group>"; };
 		3F58F5EC4483AE1B033EAA84 /* Pods_Places.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Places.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E5A9E505CE32935D04BC59 /* Pods-Presentation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Presentation.release.xcconfig"; path = "Target Support Files/Pods-Presentation/Pods-Presentation.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +204,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FA516224BDE89F00AC370A /* Repository.framework in Frameworks */,
 				35FA512B24BD76F500AC370A /* Domain.framework in Frameworks */,
 				35FA50DC24BD60C600AC370A /* Presentation.framework in Frameworks */,
 				57FA448DC8B8F0494593035B /* Pods_Places.framework in Frameworks */,
@@ -157,6 +215,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FA517B24BDED7B00AC370A /* Repository.framework in Frameworks */,
 				EB8D40AED30EC39FE1FD123F /* Pods_Presentation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +243,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		35FA514A24BDE89E00AC370A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FA515224BDE89F00AC370A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FA515624BDE89F00AC370A /* Repository.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -203,6 +277,7 @@
 				3540BF9124BD323200BB7C78 /* Places */,
 				35FA50C824BD60C500AC370A /* Presentation */,
 				35FA511724BD76F400AC370A /* Domain */,
+				35FA514E24BDE89F00AC370A /* Repository */,
 				3540BF9024BD323200BB7C78 /* Products */,
 				6D8F5F9357E13C65FB2CA615 /* Pods */,
 				160E56D0E71AC2ADCC42E209 /* Frameworks */,
@@ -217,6 +292,8 @@
 				35FA50CF24BD60C500AC370A /* PresentationTests.xctest */,
 				35FA511624BD76F400AC370A /* Domain.framework */,
 				35FA511E24BD76F400AC370A /* DomainTests.xctest */,
+				35FA514D24BDE89E00AC370A /* Repository.framework */,
+				35FA515524BDE89F00AC370A /* RepositoryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -317,6 +394,7 @@
 				35FA50F924BD6AE600AC370A /* Assets.xcassets */,
 				35FA510A24BD703000AC370A /* Info.plist */,
 				35FA50FA24BD6AE600AC370A /* Localizable.strings */,
+				35FA518024BDEEFF00AC370A /* Presentation.h */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -409,6 +487,49 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		35FA514E24BDE89F00AC370A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				35FA516A24BDE90B00AC370A /* Resources */,
+				35FA516D24BDE90B00AC370A /* Sources */,
+				35FA516E24BDE90B00AC370A /* Tests */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		35FA516A24BDE90B00AC370A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35FA516B24BDE90B00AC370A /* Repository.h */,
+				35FA516C24BDE90B00AC370A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		35FA516D24BDE90B00AC370A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		35FA516E24BDE90B00AC370A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				35FA517A24BDEC5600AC370A /* Resources */,
+				35FA517824BDEB5200AC370A /* RespoTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		35FA517A24BDEC5600AC370A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35FA516F24BDE90B00AC370A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		6D8F5F9357E13C65FB2CA615 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +548,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FA518124BDEEFF00AC370A /* Presentation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +557,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				35FA512824BD76F400AC370A /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FA514824BDE89E00AC370A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FA517124BDE90B00AC370A /* Repository.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +588,7 @@
 			dependencies = (
 				35FA50DB24BD60C600AC370A /* PBXTargetDependency */,
 				35FA512A24BD76F500AC370A /* PBXTargetDependency */,
+				35FA516124BDE89F00AC370A /* PBXTargetDependency */,
 			);
 			name = Places;
 			productName = Places;
@@ -473,10 +604,12 @@
 				35FA50C324BD60C500AC370A /* Sources */,
 				35FA50C424BD60C500AC370A /* Frameworks */,
 				35FA50C524BD60C500AC370A /* Resources */,
+				35FA517F24BDED7B00AC370A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				35FA517E24BDED7B00AC370A /* PBXTargetDependency */,
 			);
 			name = Presentation;
 			productName = Presentation;
@@ -539,6 +672,43 @@
 			productReference = 35FA511E24BD76F400AC370A /* DomainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		35FA514C24BDE89E00AC370A /* Repository */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35FA516424BDE8A000AC370A /* Build configuration list for PBXNativeTarget "Repository" */;
+			buildPhases = (
+				35FA514824BDE89E00AC370A /* Headers */,
+				35FA514924BDE89E00AC370A /* Sources */,
+				35FA514A24BDE89E00AC370A /* Frameworks */,
+				35FA514B24BDE89E00AC370A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Repository;
+			productName = Repository;
+			productReference = 35FA514D24BDE89E00AC370A /* Repository.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		35FA515424BDE89F00AC370A /* RepositoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35FA516724BDE8A000AC370A /* Build configuration list for PBXNativeTarget "RepositoryTests" */;
+			buildPhases = (
+				35FA515124BDE89F00AC370A /* Sources */,
+				35FA515224BDE89F00AC370A /* Frameworks */,
+				35FA515324BDE89F00AC370A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35FA515824BDE89F00AC370A /* PBXTargetDependency */,
+				35FA515A24BDE89F00AC370A /* PBXTargetDependency */,
+			);
+			name = RepositoryTests;
+			productName = RepositoryTests;
+			productReference = 35FA515524BDE89F00AC370A /* RepositoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -568,6 +738,13 @@
 					35FA511D24BD76F400AC370A = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					35FA514C24BDE89E00AC370A = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					35FA515424BDE89F00AC370A = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
 				};
 			};
 			buildConfigurationList = 3540BF8A24BD323200BB7C78 /* Build configuration list for PBXProject "Places" */;
@@ -588,6 +765,8 @@
 				35FA50CE24BD60C500AC370A /* PresentationTests */,
 				35FA511524BD76F400AC370A /* Domain */,
 				35FA511D24BD76F400AC370A /* DomainTests */,
+				35FA514C24BDE89E00AC370A /* Repository */,
+				35FA515424BDE89F00AC370A /* RepositoryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -638,6 +817,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FA514B24BDE89E00AC370A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FA517224BDE90B00AC370A /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FA515324BDE89F00AC370A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FA517524BDE91000AC370A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,6 +969,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		35FA514924BDE89E00AC370A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FA515124BDE89F00AC370A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FA517924BDEB5200AC370A /* RespoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -806,6 +1016,26 @@
 			isa = PBXTargetDependency;
 			target = 35FA511524BD76F400AC370A /* Domain */;
 			targetProxy = 35FA512924BD76F500AC370A /* PBXContainerItemProxy */;
+		};
+		35FA515824BDE89F00AC370A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35FA514C24BDE89E00AC370A /* Repository */;
+			targetProxy = 35FA515724BDE89F00AC370A /* PBXContainerItemProxy */;
+		};
+		35FA515A24BDE89F00AC370A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3540BF8E24BD323200BB7C78 /* Places */;
+			targetProxy = 35FA515924BDE89F00AC370A /* PBXContainerItemProxy */;
+		};
+		35FA516124BDE89F00AC370A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35FA514C24BDE89E00AC370A /* Repository */;
+			targetProxy = 35FA516024BDE89F00AC370A /* PBXContainerItemProxy */;
+		};
+		35FA517E24BDED7B00AC370A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35FA514C24BDE89E00AC370A /* Repository */;
+			targetProxy = 35FA517D24BDED7B00AC370A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1171,6 +1401,99 @@
 			};
 			name = Release;
 		};
+		35FA516524BDE8A000AC370A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M477CCRL65;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Repository/Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.willian.Repository;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		35FA516624BDE8A000AC370A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M477CCRL65;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Repository/Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.willian.Repository;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		35FA516824BDE8A000AC370A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M477CCRL65;
+				INFOPLIST_FILE = Repository/Tests/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.willian.RepositoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35FA516924BDE8A000AC370A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M477CCRL65;
+				INFOPLIST_FILE = Repository/Tests/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.willian.RepositoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1224,6 +1547,24 @@
 			buildConfigurations = (
 				35FA513124BD76F500AC370A /* Debug */,
 				35FA513224BD76F500AC370A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35FA516424BDE8A000AC370A /* Build configuration list for PBXNativeTarget "Repository" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35FA516524BDE8A000AC370A /* Debug */,
+				35FA516624BDE8A000AC370A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35FA516724BDE8A000AC370A /* Build configuration list for PBXNativeTarget "RepositoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35FA516824BDE8A000AC370A /* Debug */,
+				35FA516924BDE8A000AC370A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

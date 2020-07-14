@@ -28,9 +28,37 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "35FA511524BD76F400AC370A"
+               BuildableName = "Domain.framework"
+               BlueprintName = "Domain"
+               ReferencedContainer = "container:Places.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "35FA50C624BD60C500AC370A"
                BuildableName = "Presentation.framework"
                BlueprintName = "Presentation"
+               ReferencedContainer = "container:Places.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "35FA514C24BDE89E00AC370A"
+               BuildableName = "Repository.framework"
+               BlueprintName = "Repository"
                ReferencedContainer = "container:Places.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -59,6 +87,16 @@
                BlueprintIdentifier = "35FA511D24BD76F400AC370A"
                BuildableName = "DomainTests.xctest"
                BlueprintName = "DomainTests"
+               ReferencedContainer = "container:Places.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "35FA515424BDE89F00AC370A"
+               BuildableName = "RepositoryTests.xctest"
+               BlueprintName = "RepositoryTests"
                ReferencedContainer = "container:Places.xcodeproj">
             </BuildableReference>
          </TestableReference>
