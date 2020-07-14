@@ -31,6 +31,7 @@
 		35FA510C24BD703000AC370A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35FA510A24BD703000AC370A /* Info.plist */; };
 		35FA510E24BD715E00AC370A /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA510D24BD715E00AC370A /* Fonts+Generated.swift */; };
 		35FA510F24BD715E00AC370A /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA510D24BD715E00AC370A /* Fonts+Generated.swift */; };
+		35FA511024BD754600AC370A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FA50F924BD6AE600AC370A /* Assets.xcassets */; };
 		57FA448DC8B8F0494593035B /* Pods_Places.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F58F5EC4483AE1B033EAA84 /* Pods_Places.framework */; };
 		EB8D40AED30EC39FE1FD123F /* Pods_Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF168A7826B50F27DEB6FFBF /* Pods_Presentation.framework */; };
 /* End PBXBuildFile section */
@@ -439,6 +440,7 @@
 				35FA510724BD6F6700AC370A /* OpenSans-SemiBold.ttf in Resources */,
 				35FA510924BD6F6700AC370A /* OpenSans-Regular.ttf in Resources */,
 				35FA510524BD6F6700AC370A /* OpenSans-Light.ttf in Resources */,
+				35FA511024BD754600AC370A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
