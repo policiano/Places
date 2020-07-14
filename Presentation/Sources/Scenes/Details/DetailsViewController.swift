@@ -4,7 +4,6 @@ import UIKit
 public final class DetailsViewController: UIViewController {
     private lazy var label: UILabel = {
         let label = UILabel()
-        label.text = L10n.test
         label.font = .heading1
         return label
     }()

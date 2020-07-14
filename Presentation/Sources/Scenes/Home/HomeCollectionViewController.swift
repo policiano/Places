@@ -10,7 +10,7 @@ final class HomeCollectionViewController: UICollectionViewController {
 
     init(presenter: HomePresentationLogic) {
         self.presenter = presenter
-        super.init(collectionViewLayout: UICollectionViewFlowLayout())
+        super.init(collectionViewLayout: PinterestLayout())
     }
 
     @available(*, unavailable)
@@ -18,12 +18,18 @@ final class HomeCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         presenter.presentPlaces(request: .init())
+        setup()
     }
 
     private var items: [Home.GetPlaces.ViewModel.Item] = [] {
         didSet {
             collectionView.reloadData()
         }
+    }
+
+    private func setup() {
+        title = L10n.Home.NavBar.title
+        collectionView.backgroundColor = .white
     }
 
     // MARK: Collection View

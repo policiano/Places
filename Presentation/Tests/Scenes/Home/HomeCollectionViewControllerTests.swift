@@ -42,6 +42,8 @@ final class HomeCollectionViewControllerTests: XCTestCase {
         sut.viewDidLoad()
 
         XCTAssertTrue(presenterSpy.presentPlacesCalled)
+        XCTAssertEqual(sut.title, "Home")
+        XCTAssertEqual(sut.collectionView.backgroundColor, UIColor.white)
     }
 }
 

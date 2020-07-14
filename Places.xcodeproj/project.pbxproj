@@ -14,6 +14,8 @@
 		35719DCD24BE663E00E80812 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DCC24BE663E00E80812 /* HomePresenter.swift */; };
 		35719DCF24BE664E00E80812 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DCE24BE664E00E80812 /* HomeCollectionViewController.swift */; };
 		35719DD224BE66BB00E80812 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DD124BE66BB00E80812 /* CustomViewController.swift */; };
+		35719DD424BE68BB00E80812 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DD324BE68BB00E80812 /* PinterestLayout.swift */; };
+		35719DDA24BE6AA200E80812 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DD924BE6AA200E80812 /* HomeConfigurator.swift */; };
 		35FA50A624BD3F3C00AC370A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FA50A524BD3F3C00AC370A /* Assets.xcassets */; };
 		35FA50D024BD60C500AC370A /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA50C724BD60C500AC370A /* Presentation.framework */; };
 		35FA50DC24BD60C600AC370A /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA50C724BD60C500AC370A /* Presentation.framework */; };
@@ -169,6 +171,8 @@
 		35719DCC24BE663E00E80812 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		35719DCE24BE664E00E80812 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		35719DD124BE66BB00E80812 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		35719DD324BE68BB00E80812 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		35719DD924BE6AA200E80812 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
 		35FA50A524BD3F3C00AC370A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35FA50A724BD40CB00AC370A /* Anchorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Anchorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FA50C724BD60C500AC370A /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -339,6 +343,7 @@
 				35719DC924BE662A00E80812 /* HomeModels.swift */,
 				35719DCC24BE663E00E80812 /* HomePresenter.swift */,
 				35719DCE24BE664E00E80812 /* HomeCollectionViewController.swift */,
+				35719DD924BE6AA200E80812 /* HomeConfigurator.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -413,6 +418,7 @@
 		35FA50EF24BD643300AC370A /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				35719DD324BE68BB00E80812 /* PinterestLayout.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -987,7 +993,9 @@
 				35FA50F324BD643300AC370A /* Assets+Generated.swift in Sources */,
 				35FA510E24BD715E00AC370A /* Fonts+Generated.swift in Sources */,
 				35FA50F724BD643300AC370A /* DetailsViewController.swift in Sources */,
+				35719DD424BE68BB00E80812 /* PinterestLayout.swift in Sources */,
 				35719DD224BE66BB00E80812 /* CustomViewController.swift in Sources */,
+				35719DDA24BE6AA200E80812 /* HomeConfigurator.swift in Sources */,
 				35719DCA24BE662A00E80812 /* HomeModels.swift in Sources */,
 				35719DCD24BE663E00E80812 /* HomePresenter.swift in Sources */,
 			);
