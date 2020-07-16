@@ -1,15 +1,20 @@
 import Foundation
 
 public struct Place {
+    public struct Thumbnail {
+        public let url: URL
+        public let estimatedHeight: Double
+    }
+
     public let name: String
     public let category: String?
-    public let thumbnailURL: URL?
+    public let thumbnail: Thumbnail?
     public let score: Decimal
 
     public init(
         name: String,
         category: String?,
-        thumbnailURL: URL?,
+        thumbnail: Thumbnail?,
         score: Decimal
     ) throws {
         guard 0...5 ~= score else {
@@ -22,7 +27,7 @@ public struct Place {
 
         self.name = name
         self.category = category
-        self.thumbnailURL = thumbnailURL
+        self.thumbnail = thumbnail
         self.score = score
     }
 

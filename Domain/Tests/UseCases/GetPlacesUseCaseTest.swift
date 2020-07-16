@@ -33,12 +33,14 @@ final class GetPlacesUseCaseTest: XCTestCase {
         XCTAssertTrue(spy.getPlacesCalled)
         XCTAssertEqual(actualResult?.value?[0].name, expectedPlaces[0].name)
         XCTAssertEqual(actualResult?.value?[0].category, expectedPlaces[0].category)
-        XCTAssertEqual(actualResult?.value?[0].thumbnailURL, expectedPlaces[0].thumbnailURL)
+        XCTAssertEqual(actualResult?.value?[0].thumbnail?.url, expectedPlaces[0].thumbnail?.url)
+        XCTAssertEqual(actualResult?.value?[0].thumbnail?.estimatedHeight, expectedPlaces[0].thumbnail?.estimatedHeight)
         XCTAssertEqual(actualResult?.value?[0].score, expectedPlaces[0].score)
 
         XCTAssertEqual(actualResult?.value?[1].name, expectedPlaces[1].name)
         XCTAssertEqual(actualResult?.value?[1].category, expectedPlaces[1].category)
-        XCTAssertEqual(actualResult?.value?[1].thumbnailURL, expectedPlaces[1].thumbnailURL)
+        XCTAssertEqual(actualResult?.value?[1].thumbnail?.url, expectedPlaces[1].thumbnail?.url)
+        XCTAssertEqual(actualResult?.value?[1].thumbnail?.estimatedHeight, expectedPlaces[1].thumbnail?.estimatedHeight)
         XCTAssertEqual(actualResult?.value?[1].score, expectedPlaces[1].score)
     }
 }

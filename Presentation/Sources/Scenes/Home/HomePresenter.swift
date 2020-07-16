@@ -1,5 +1,6 @@
 import Domain
 import Foundation
+import UIKit
 
 protocol HomePresentationLogic {
     func presentPlaces(request: Home.GetPlaces.Request)
@@ -45,7 +46,7 @@ extension Home.GetPlaces.ViewModel.Item {
         formatter.maximumFractionDigits = 2
 
         score = formatter.string(from: NSDecimalNumber(decimal: place.score)) ?? ""
-        estimatedThumbnailHeight = 100
-        thumbnailURL = place.thumbnailURL
+        estimatedThumbnailHeight = CGFloat(place.thumbnail?.estimatedHeight ?? 180)
+        thumbnailURL = place.thumbnail?.url
     }
 }
