@@ -21,6 +21,10 @@ final class HomeCollectionViewController: UICollectionViewController {
         setup()
     }
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     private var items: [Home.GetPlaces.ViewModel.Item] = [] {
         didSet {
             collectionView.reloadData()
