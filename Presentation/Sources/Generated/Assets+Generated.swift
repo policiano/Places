@@ -23,6 +23,10 @@ internal enum Asset {
   internal static let icBack = ImageAsset(name: "icBack")
   internal static let icEmail = ImageAsset(name: "icEmail")
   internal static let icFilter = ImageAsset(name: "icFilter")
+  internal static let icGoldStarRegular = ImageAsset(name: "icGoldStarRegular")
+  internal static let icGoldStarSmall = ImageAsset(name: "icGoldStarSmall")
+  internal static let icGrayStarRegular = ImageAsset(name: "icGrayStarRegular")
+  internal static let icGrayStarSmall = ImageAsset(name: "icGrayStarSmall")
   internal static let icHomeActive = ImageAsset(name: "icHomeActive")
   internal static let icHomeInactive = ImageAsset(name: "icHomeInactive")
   internal static let icMapActive = ImageAsset(name: "icMapActive")
@@ -31,11 +35,7 @@ internal enum Asset {
   internal static let icPin = ImageAsset(name: "icPin")
   internal static let icProfileActive = ImageAsset(name: "icProfileActive")
   internal static let icProfileInactive = ImageAsset(name: "icProfileInactive")
-  internal static let icRegularGoldStar = ImageAsset(name: "icRegularGoldStar")
-  internal static let icRegularGrayStar = ImageAsset(name: "icRegularGrayStar")
   internal static let icShare = ImageAsset(name: "icShare")
-  internal static let icSmallGoldStar = ImageAsset(name: "icSmallGoldStar")
-  internal static let icSmallGrayStar = ImageAsset(name: "icSmallGrayStar")
   internal static let icTime = ImageAsset(name: "icTime")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
