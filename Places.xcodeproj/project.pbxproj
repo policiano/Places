@@ -17,6 +17,7 @@
 		35719DD224BE66BB00E80812 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DD124BE66BB00E80812 /* CustomViewController.swift */; };
 		35719DD424BE68BB00E80812 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DD324BE68BB00E80812 /* PinterestLayout.swift */; };
 		35719DDA24BE6AA200E80812 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DD924BE6AA200E80812 /* HomeConfigurator.swift */; };
+		35719DDC24BE6DBB00E80812 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DDB24BE6DBB00E80812 /* PlaceCell.swift */; };
 		35719DDE24BE719D00E80812 /* Dequeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DDD24BE719D00E80812 /* Dequeable.swift */; };
 		35719DE024BF3D2300E80812 /* StackViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DDF24BF3D2300E80812 /* StackViewBuilder.swift */; };
 		35719DE224BF423B00E80812 /* ColorRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DE124BF423B00E80812 /* ColorRandomizer.swift */; };
@@ -181,6 +182,7 @@
 		35719DD124BE66BB00E80812 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		35719DD324BE68BB00E80812 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		35719DD924BE6AA200E80812 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		35719DDB24BE6DBB00E80812 /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
 		35719DDD24BE719D00E80812 /* Dequeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dequeable.swift; sourceTree = "<group>"; };
 		35719DDF24BF3D2300E80812 /* StackViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewBuilder.swift; sourceTree = "<group>"; };
 		35719DE124BF423B00E80812 /* ColorRandomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRandomizer.swift; sourceTree = "<group>"; };
@@ -447,6 +449,7 @@
 			isa = PBXGroup;
 			children = (
 				35719DD324BE68BB00E80812 /* PinterestLayout.swift */,
+				35719DDB24BE6DBB00E80812 /* PlaceCell.swift */,
 				35719DE324BF43A500E80812 /* ScoreView.swift */,
 			);
 			path = Widgets;
@@ -1016,6 +1019,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35719DDC24BE6DBB00E80812 /* PlaceCell.swift in Sources */,
 				35719DCF24BE664E00E80812 /* HomeCollectionViewController.swift in Sources */,
 				35FA50F624BD643300AC370A /* UIFont+Theme.swift in Sources */,
 				35719DE424BF43A600E80812 /* ScoreView.swift in Sources */,
