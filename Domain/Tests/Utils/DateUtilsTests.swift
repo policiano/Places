@@ -27,20 +27,3 @@ final class DateUtilsTests: XCTestCase {
         XCTAssertEqual(actualResult.timeIntervalSince1970, TimeInterval(anyValue) * 60 * 60)
     }
 }
-
-
-protocol Random {
-    static var anyValue: Self { get }
-}
-
-extension Double: Random {
-    static var anyValue: Self {
-        Double.random(in: -10 ..< 10)
-    }
-}
-
-extension Int: Random {
-    static var anyValue: Self {
-        Int.random(in: -100_000 ..< 100_000)
-    }
-}
