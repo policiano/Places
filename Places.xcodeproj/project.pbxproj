@@ -11,6 +11,13 @@
 		3504004B24BFECBB00E12D26 /* PlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3504004A24BFECBB00E12D26 /* PlaceTests.swift */; };
 		3504004D24BFF2EE00E12D26 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3504004C24BFF2EE00E12D26 /* Place.swift */; };
 		3504005324BFF3A200E12D26 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3504005224BFF3A200E12D26 /* Random.swift */; };
+		3504005624BFF40800E12D26 /* GetPlacesUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3504005524BFF40800E12D26 /* GetPlacesUseCaseTest.swift */; };
+		3504005824BFF69B00E12D26 /* Result+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3504005724BFF69B00E12D26 /* Result+Extension.swift */; };
+		3504005C24BFF80D00E12D26 /* Place+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3504005A24BFF7E900E12D26 /* Place+Fixture.swift */; };
+		3504005F24BFF9C700E12D26 /* GetPlacesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3504005E24BFF9C700E12D26 /* GetPlacesUseCase.swift */; };
+		3504006224BFF9F500E12D26 /* PlacesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3504006124BFF9F500E12D26 /* PlacesRepository.swift */; };
+		3504006624BFFA3600E12D26 /* PlacesRepositorySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3504006324BFFA1A00E12D26 /* PlacesRepositorySpy.swift */; };
+		3504006824BFFA4700E12D26 /* ErrorDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3504006724BFFA4700E12D26 /* ErrorDummy.swift */; };
 		3540BF9324BD323200BB7C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540BF9224BD323200BB7C78 /* AppDelegate.swift */; };
 		3540BF9F24BD323300BB7C78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3540BF9D24BD323300BB7C78 /* LaunchScreen.storyboard */; };
 		35719DC624BE58E400E80812 /* HomeCollectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DC524BE58E400E80812 /* HomeCollectionViewControllerTests.swift */; };
@@ -180,6 +187,13 @@
 		3504004A24BFECBB00E12D26 /* PlaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTests.swift; sourceTree = "<group>"; };
 		3504004C24BFF2EE00E12D26 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		3504005224BFF3A200E12D26 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		3504005524BFF40800E12D26 /* GetPlacesUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacesUseCaseTest.swift; sourceTree = "<group>"; };
+		3504005724BFF69B00E12D26 /* Result+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extension.swift"; sourceTree = "<group>"; };
+		3504005A24BFF7E900E12D26 /* Place+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+Fixture.swift"; sourceTree = "<group>"; };
+		3504005E24BFF9C700E12D26 /* GetPlacesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacesUseCase.swift; sourceTree = "<group>"; };
+		3504006124BFF9F500E12D26 /* PlacesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesRepository.swift; sourceTree = "<group>"; };
+		3504006324BFFA1A00E12D26 /* PlacesRepositorySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesRepositorySpy.swift; sourceTree = "<group>"; };
+		3504006724BFFA4700E12D26 /* ErrorDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDummy.swift; sourceTree = "<group>"; };
 		3540BF8F24BD323200BB7C78 /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3540BF9224BD323200BB7C78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3540BF9E24BD323300BB7C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -315,8 +329,35 @@
 			isa = PBXGroup;
 			children = (
 				3504005224BFF3A200E12D26 /* Random.swift */,
+				3504005A24BFF7E900E12D26 /* Place+Fixture.swift */,
+				3504006324BFFA1A00E12D26 /* PlacesRepositorySpy.swift */,
+				3504006724BFFA4700E12D26 /* ErrorDummy.swift */,
 			);
 			path = Doubles;
+			sourceTree = "<group>";
+		};
+		3504005424BFF3EE00E12D26 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3504005524BFF40800E12D26 /* GetPlacesUseCaseTest.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3504005D24BFF9B800E12D26 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3504005E24BFF9C700E12D26 /* GetPlacesUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3504006024BFF9E300E12D26 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3504006124BFF9F500E12D26 /* PlacesRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		3540BF8624BD323200BB7C78 = {
@@ -543,6 +584,8 @@
 		35FA513324BD770A00AC370A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				3504006024BFF9E300E12D26 /* Repositories */,
+				3504005D24BFF9B800E12D26 /* UseCases */,
 				35FA513C24BD810000AC370A /* Utils */,
 				35FA513624BD7A0A00AC370A /* Entities */,
 			);
@@ -561,6 +604,7 @@
 		35FA513524BD771A00AC370A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				3504005424BFF3EE00E12D26 /* UseCases */,
 				3504005124BFF39000E12D26 /* Doubles */,
 				35FA513F24BD812500AC370A /* Entities */,
 				35FA513924BD7B0100AC370A /* Utils */,
@@ -582,6 +626,7 @@
 			isa = PBXGroup;
 			children = (
 				35FA513A24BD7B1B00AC370A /* DateUtilsTests.swift */,
+				3504005724BFF69B00E12D26 /* Result+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1088,6 +1133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3504005824BFF69B00E12D26 /* Result+Extension.swift in Sources */,
+				3504006224BFF9F500E12D26 /* PlacesRepository.swift in Sources */,
+				3504005F24BFF9C700E12D26 /* GetPlacesUseCase.swift in Sources */,
 				3504004D24BFF2EE00E12D26 /* Place.swift in Sources */,
 				35FA513824BD7A2100AC370A /* Schedule.swift in Sources */,
 				35FA513E24BD810F00AC370A /* Date+Utils.swift in Sources */,
@@ -1099,7 +1147,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3504005324BFF3A200E12D26 /* Random.swift in Sources */,
+				3504006824BFFA4700E12D26 /* ErrorDummy.swift in Sources */,
+				3504006624BFFA3600E12D26 /* PlacesRepositorySpy.swift in Sources */,
+				3504005C24BFF80D00E12D26 /* Place+Fixture.swift in Sources */,
 				35FA514724BD85A800AC370A /* ScheduleTests.swift in Sources */,
+				3504005624BFF40800E12D26 /* GetPlacesUseCaseTest.swift in Sources */,
 				3504004B24BFECBB00E12D26 /* PlaceTests.swift in Sources */,
 				35FA513B24BD7B1B00AC370A /* DateUtilsTests.swift in Sources */,
 			);
