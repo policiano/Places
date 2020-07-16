@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3504004924BFB41A00E12D26 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3504004824BFB41A00E12D26 /* Info.plist */; };
 		3540BF9324BD323200BB7C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540BF9224BD323200BB7C78 /* AppDelegate.swift */; };
 		3540BF9F24BD323300BB7C78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3540BF9D24BD323300BB7C78 /* LaunchScreen.storyboard */; };
 		35719DC624BE58E400E80812 /* HomeCollectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DC524BE58E400E80812 /* HomeCollectionViewControllerTests.swift */; };
@@ -163,6 +164,7 @@
 
 /* Begin PBXFileReference section */
 		2642F99A0B64754E17D5CCEB /* Pods-Places.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Places.release.xcconfig"; path = "Target Support Files/Pods-Places/Pods-Places.release.xcconfig"; sourceTree = "<group>"; };
+		3504004824BFB41A00E12D26 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3540BF8F24BD323200BB7C78 /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3540BF9224BD323200BB7C78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3540BF9E24BD323300BB7C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -359,6 +361,7 @@
 		35FA50A424BD3F2000AC370A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3504004824BFB41A00E12D26 /* Info.plist */,
 				3540BF9D24BD323300BB7C78 /* LaunchScreen.storyboard */,
 				35FA50A524BD3F3C00AC370A /* Assets.xcassets */,
 			);
@@ -831,6 +834,7 @@
 			files = (
 				35FA50A624BD3F3C00AC370A /* Assets.xcassets in Resources */,
 				3540BF9F24BD323300BB7C78 /* LaunchScreen.storyboard in Resources */,
+				3504004924BFB41A00E12D26 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1233,7 +1237,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M477CCRL65;
-				INFOPLIST_FILE = Places/Info.plist;
+				INFOPLIST_FILE = Places/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1253,7 +1257,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M477CCRL65;
-				INFOPLIST_FILE = Places/Info.plist;
+				INFOPLIST_FILE = Places/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
