@@ -20,6 +20,6 @@ class UIFontThemeTests: XCTestCase {
         XCTAssertEqual(UIFont.body3.pointSize, 14)
 
         XCTAssertEqual(UIFont.caption.fontName, "OpenSans-Regular")
-        XCTAssertEqual(UIFont.caption.pointSize, 14)
+        XCTAssertEqual(UIFont.caption.pointSize, 12)
     }
 }
