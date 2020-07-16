@@ -20,6 +20,8 @@
 		35719DDE24BE719D00E80812 /* Dequeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DDD24BE719D00E80812 /* Dequeable.swift */; };
 		35719DE024BF3D2300E80812 /* StackViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DDF24BF3D2300E80812 /* StackViewBuilder.swift */; };
 		35719DE224BF423B00E80812 /* ColorRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DE124BF423B00E80812 /* ColorRandomizer.swift */; };
+		35719DE424BF43A600E80812 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DE324BF43A500E80812 /* ScoreView.swift */; };
+		35719DEB24BF467100E80812 /* ScoreViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DE924BF457000E80812 /* ScoreViewTests.swift */; };
 		35719DF224BF4C9700E80812 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DF124BF4C9700E80812 /* DesignSystem.swift */; };
 		35FA50A624BD3F3C00AC370A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FA50A524BD3F3C00AC370A /* Assets.xcassets */; };
 		35FA50D024BD60C500AC370A /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA50C724BD60C500AC370A /* Presentation.framework */; };
@@ -182,6 +184,8 @@
 		35719DDD24BE719D00E80812 /* Dequeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dequeable.swift; sourceTree = "<group>"; };
 		35719DDF24BF3D2300E80812 /* StackViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewBuilder.swift; sourceTree = "<group>"; };
 		35719DE124BF423B00E80812 /* ColorRandomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRandomizer.swift; sourceTree = "<group>"; };
+		35719DE324BF43A500E80812 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		35719DE924BF457000E80812 /* ScoreViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewTests.swift; sourceTree = "<group>"; };
 		35719DF124BF4C9700E80812 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		35FA50A524BD3F3C00AC370A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35FA50A724BD40CB00AC370A /* Anchorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Anchorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -369,6 +373,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		35719DE524BF44DD00E80812 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				35719DE924BF457000E80812 /* ScoreViewTests.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
 		35FA50A424BD3F2000AC370A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +447,7 @@
 			isa = PBXGroup;
 			children = (
 				35719DD324BE68BB00E80812 /* PinterestLayout.swift */,
+				35719DE324BF43A500E80812 /* ScoreView.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -1005,6 +1018,7 @@
 			files = (
 				35719DCF24BE664E00E80812 /* HomeCollectionViewController.swift in Sources */,
 				35FA50F624BD643300AC370A /* UIFont+Theme.swift in Sources */,
+				35719DE424BF43A600E80812 /* ScoreView.swift in Sources */,
 				35FA50F524BD643300AC370A /* UIColor+Theme.swift in Sources */,
 				35719DDE24BE719D00E80812 /* Dequeable.swift in Sources */,
 				35FA50F424BD643300AC370A /* Strings+Generated.swift in Sources */,
@@ -1027,6 +1041,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35FA510F24BD715E00AC370A /* Fonts+Generated.swift in Sources */,
+				35719DEB24BF467100E80812 /* ScoreViewTests.swift in Sources */,
 				35FA50FF24BD6B9D00AC370A /* UIFontThemeTests.swift in Sources */,
 				35719DC624BE58E400E80812 /* HomeCollectionViewControllerTests.swift in Sources */,
 			);
