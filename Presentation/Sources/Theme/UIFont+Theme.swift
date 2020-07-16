@@ -22,7 +22,7 @@ extension UIFont {
     }
 
     class var caption: UIFont {
-        return ThemeFont.regular.font(size: 14.0)
+        return ThemeFont.regular.font(size: 12.0)
     }
 }
 
