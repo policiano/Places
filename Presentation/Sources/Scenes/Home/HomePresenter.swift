@@ -1,3 +1,4 @@
+import Domain
 import Foundation
 
 protocol HomePresentationLogic {
@@ -7,22 +8,44 @@ protocol HomePresentationLogic {
 class HomePresenter: HomePresentationLogic {
     weak var display: HomeDisplayLogic?
 
+    private let getPlaces: GetPlacesUseCase
+
+    init(getPlaces: GetPlacesUseCase) {
+        self.getPlaces = getPlaces
+    }
+
     func presentPlaces(request: Home.GetPlaces.Request) {
-        typealias Item = Home.GetPlaces.ViewModel.Item
+        typealias ViewModel = Home.GetPlaces.ViewModel
+        getPlaces.execute { [weak self] in
+            guard let self = self else { return }
 
-        let items: [Item] = [
-            .init(name: "Café Escritório", category: "Coworking", stars: 5, score: "5", photoHight: 214),
-            .init(name: "Hangar", category: "Restaurante", stars: 4, score: "4", photoHight: 136),
-            .init(name: "Padaria Pelicano", category: "Padaria", stars: 3, score: "3.8", photoHight: 152),
-            .init(name: "KPOPKA", category: "Sucos naturais", stars: 2, score: "2", photoHight: 201),
-            .init(name: "Baianera", category: "Restaurante", stars: 1, score: "1", photoHight: 171),
-            .init(name: "Garage", category: "Cafeteria", stars: 0, score: "0.7", photoHight: 136),
-            .init(name: "Passaí", category: "Sucos naturais", stars: 3, score: "3", photoHight: 136),
-            .init(name: "Simple", category: "Produtos Naturais", stars: 4, score: "4.5", photoHight: 214),
-            .init(name: "Café Kitsumé", category: "Cafeteria", stars: 5, score: "5", photoHight: 187),
-            .init(name: "Cantina do Leo", category: "Restaurante", stars: 6, score: "5", photoHight: 214)
-        ]//.shuffled()
+            let viewModel: ViewModel
+            switch $0 {
+            case .success(let places) where places.isEmpty == false:
+                viewModel = .content(places.compactMap(ViewModel.Item.init))
+            default:
+                viewModel = .empty(L10n.Home.Places.empty)
+            }
 
-        display?.displayPlaces(viewModel: .init(items: items))
+            self.display?.displayPlaces(viewModel: viewModel)
+        }
+    }
+}
+
+extension Home.GetPlaces.ViewModel.Item {
+    init(place: Place) {
+        name = place.name
+        category = place.category
+        stars = NSDecimalNumber(decimal: place.score).intValue
+
+        let formatter = NumberFormatter()
+        formatter.numberStyle = NumberFormatter.Style.decimal
+        formatter.roundingMode = NumberFormatter.RoundingMode.floor
+        formatter.decimalSeparator = "."
+        formatter.maximumFractionDigits = 2
+
+        score = formatter.string(from: NSDecimalNumber(decimal: place.score)) ?? ""
+        estimatedThumbnailHeight = 100
+        thumbnailURL = place.thumbnailURL
     }
 }

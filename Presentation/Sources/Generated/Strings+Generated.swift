@@ -16,6 +16,10 @@ internal enum L10n {
       /// Home
       internal static let title = L10n.tr("Localizable", "home.navBar.title")
     }
+    internal enum Places {
+      /// Nenhum resultado por enquanto. Tente novamente mais tarde.
+      internal static let empty = L10n.tr("Localizable", "home.places.empty")
+    }
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

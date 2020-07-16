@@ -7,7 +7,7 @@ public protocol GetPlacesUseCase {
 public final class GetPlaces {
     private let repository: PlacesRepository
 
-    init(repository: PlacesRepository) {
+    public init(repository: PlacesRepository) {
         self.repository = repository
     }
 }

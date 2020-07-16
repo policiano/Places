@@ -3,7 +3,7 @@ import Domain
 import Foundation
 
 extension Place {
-    static func fixture(
+    public static func fixture(
         name: String = .anyValue,
         category: String? = .anyValue,
         thumbnailURL: URL? = nil,

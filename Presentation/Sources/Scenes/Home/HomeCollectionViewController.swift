@@ -63,19 +63,16 @@ extension HomeCollectionViewController: UICollectionViewDelegateFlowLayout {
         let itemSize = (collectionView.frame.width - (collectionView.contentInset.left + collectionView.contentInset.right + 10)) / 2
         return CGSize(width: itemSize, height: itemSize)
     }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        16
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        24
-    }
 }
 
 extension HomeCollectionViewController: HomeDisplayLogic {
     func displayPlaces(viewModel: Home.GetPlaces.ViewModel) {
-        items = viewModel.items
+        switch viewModel {
+        case .content(let items):
+            self.items = items
+        case .empty:
+            break
+        }
     }
 }
 
@@ -83,7 +80,7 @@ extension HomeCollectionViewController: PinterestLayoutDelegate {
     func collectionView(
         _ collectionView: UICollectionView,
         heightForPhotoAtIndexPath indexPath:IndexPath) -> CGFloat {
-        return items[indexPath.item].photoHight + 82
+        return items[indexPath.item].estimatedThumbnailHeight + 82
     }
 }
 

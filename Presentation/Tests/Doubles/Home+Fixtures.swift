@@ -3,20 +3,15 @@ import Presentation
 import Foundation
 import UIKit
 
-extension Home.GetPlaces.ViewModel {
-    static func fixture(items: [Item] = []) -> Self {
-        .init(items: items)
-    }
-}
-
 extension Home.GetPlaces.ViewModel.Item {
     static func fixture(
         name: String = "",
-        category: String = "",
+        category: String? = "",
         stars: Int = 0,
         score: String = "",
-        photoHeight: CGFloat = 0
+        thumbnailURL: URL? = nil,
+        estimatedThumbnailHeight: CGFloat = 0
     ) -> Self {
-        .init(name: name, category: category, stars: stars, score: score, photoHight: photoHeight)
+        .init(name: name, category: category, stars: stars, score: score, thumbnailURL: thumbnailURL, estimatedThumbnailHeight: estimatedThumbnailHeight)
     }
 }

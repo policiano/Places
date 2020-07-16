@@ -6,16 +6,18 @@ enum Home {
         struct Request {
 
         }
-        struct ViewModel {
+        enum ViewModel {
             struct Item {
                 let name: String
-                let category: String
+                let category: String?
                 let stars: Int
                 let score: String
-                let photoHight: CGFloat
+                let thumbnailURL: URL?
+                let estimatedThumbnailHeight: CGFloat
             }
 
-            let items: [Item]
+            case content([Item])
+            case empty(String)
         }
     }
 }

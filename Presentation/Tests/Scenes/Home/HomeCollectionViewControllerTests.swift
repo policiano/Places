@@ -10,7 +10,7 @@ final class HomeCollectionViewControllerTests: XCTestCase {
     private lazy var sut = HomeCollectionViewController(presenter: presenterSpy)
 
     func test_onDisplayPlaces_withoutItems_theCollectionShouldUpdateProperly() {
-        let viewModel = ViewModel.fixture()
+        let viewModel = ViewModel.content([])
 
         sut.displayPlaces(viewModel: viewModel)
 
@@ -19,7 +19,7 @@ final class HomeCollectionViewControllerTests: XCTestCase {
     }
 
     func test_onDisplayPlaces_withOneItems_theCollectionShouldUpdateProperly() {
-        let viewModel = ViewModel.fixture(items: [.fixture()])
+        let viewModel = ViewModel.content([.fixture()])
 
         sut.displayPlaces(viewModel: viewModel)
 
@@ -28,7 +28,7 @@ final class HomeCollectionViewControllerTests: XCTestCase {
     }
 
     func test_onDisplayPlaces_withMoreThanOneItems_theCollectionShouldUpdateProperly() {
-        let viewModel = ViewModel.fixture(items: [
+        let viewModel = ViewModel.content([
             .fixture(), .fixture()
         ])
 
@@ -42,7 +42,7 @@ final class HomeCollectionViewControllerTests: XCTestCase {
         sut.viewDidLoad()
 
         XCTAssertTrue(presenterSpy.presentPlacesCalled)
-        XCTAssertEqual(sut.title, "Home")
+        XCTAssertEqual(sut.title, "HOME")
         XCTAssertEqual(sut.collectionView.backgroundColor, UIColor.systemBackground)
     }
 }
