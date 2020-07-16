@@ -1,7 +1,7 @@
+@testable
+import Presentation
 import Foundation
 import XCTest
-
-@testable import Presentation
 
 final class HomeCollectionViewControllerTests: XCTestCase {
     private typealias ViewModel = Home.GetPlaces.ViewModel
@@ -43,34 +43,6 @@ final class HomeCollectionViewControllerTests: XCTestCase {
 
         XCTAssertTrue(presenterSpy.presentPlacesCalled)
         XCTAssertEqual(sut.title, "Home")
-        XCTAssertEqual(sut.collectionView.backgroundColor, UIColor.white)
-    }
-}
-
-// Doubles
-
-extension Home.GetPlaces.ViewModel {
-    static func fixture(items: [Item] = []) -> Self {
-        .init(items: items)
-    }
-}
-
-extension Home.GetPlaces.ViewModel.Item {
-    static func fixture(
-        name: String = "",
-        category: String = "",
-        stars: Int = 0,
-        score: String = ""
-    ) -> Self {
-        .init(name: name, category: category, stars: stars, score: score)
-    }
-}
-
-final class HomePresentationLogicSpy: HomePresentationLogic {
-    private(set) var presentPlacesCalled = false
-    private(set) var presentPlacesRequestPassed: Home.GetPlaces.Request?
-    func presentPlaces(request: Home.GetPlaces.Request) {
-        presentPlacesCalled = true
-        presentPlacesRequestPassed = request
+        XCTAssertEqual(sut.collectionView.backgroundColor, UIColor.systemBackground)
     }
 }

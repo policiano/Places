@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 enum Home {
     enum GetPlaces {
@@ -11,6 +12,7 @@ enum Home {
                 let category: String
                 let stars: Int
                 let score: String
+                let photoHight: CGFloat
             }
 
             let items: [Item]
