@@ -39,7 +39,7 @@ final class HomeCollectionViewControllerTests: XCTestCase {
     }
 
     func test_viewDidLoad_shouldCallPresentPlaces() {
-        sut.viewDidLoad()
+        sut.viewWillAppear(false)
 
         XCTAssertTrue(presenterSpy.presentPlacesCalled)
         XCTAssertEqual(sut.title, "HOME")

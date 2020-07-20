@@ -46,6 +46,7 @@
 		35719DEE24BF46DF00E80812 /* Home+Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DED24BF46DF00E80812 /* Home+Fixtures.swift */; };
 		35719DF024BF473400E80812 /* HomePresentationLogicSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DEF24BF473400E80812 /* HomePresentationLogicSpy.swift */; };
 		35719DF224BF4C9700E80812 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35719DF124BF4C9700E80812 /* DesignSystem.swift */; };
+		3592DBE424C11D2C00D30684 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3592DBE324C11D2C00D30684 /* UIView+Extensions.swift */; };
 		35FA50A624BD3F3C00AC370A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FA50A524BD3F3C00AC370A /* Assets.xcassets */; };
 		35FA50D024BD60C500AC370A /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA50C724BD60C500AC370A /* Presentation.framework */; };
 		35FA50DC24BD60C600AC370A /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA50C724BD60C500AC370A /* Presentation.framework */; };
@@ -225,6 +226,7 @@
 		35719DED24BF46DF00E80812 /* Home+Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Fixtures.swift"; sourceTree = "<group>"; };
 		35719DEF24BF473400E80812 /* HomePresentationLogicSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresentationLogicSpy.swift; sourceTree = "<group>"; };
 		35719DF124BF4C9700E80812 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		3592DBE324C11D2C00D30684 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		35FA50A524BD3F3C00AC370A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35FA50A724BD40CB00AC370A /* Anchorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Anchorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FA50C724BD60C500AC370A /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -445,6 +447,7 @@
 				35719DDD24BE719D00E80812 /* Dequeable.swift */,
 				35719DDF24BF3D2300E80812 /* StackViewBuilder.swift */,
 				35719DE124BF423B00E80812 /* ColorRandomizer.swift */,
+				3592DBE324C11D2C00D30684 /* UIView+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1122,6 +1125,7 @@
 				35719DF224BF4C9700E80812 /* DesignSystem.swift in Sources */,
 				35FA50F724BD643300AC370A /* DetailsViewController.swift in Sources */,
 				35719DD424BE68BB00E80812 /* PinterestLayout.swift in Sources */,
+				3592DBE424C11D2C00D30684 /* UIView+Extensions.swift in Sources */,
 				35719DE224BF423B00E80812 /* ColorRandomizer.swift in Sources */,
 				35719DD224BE66BB00E80812 /* CustomViewController.swift in Sources */,
 				35719DE024BF3D2300E80812 /* StackViewBuilder.swift in Sources */,

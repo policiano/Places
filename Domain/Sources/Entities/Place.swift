@@ -4,6 +4,11 @@ public struct Place {
     public struct Thumbnail {
         public let url: URL
         public let estimatedHeight: Double
+
+        public init(url: URL, estimatedHeight: Double) {
+            self.url = url
+            self.estimatedHeight = estimatedHeight
+        }
     }
 
     public let name: String

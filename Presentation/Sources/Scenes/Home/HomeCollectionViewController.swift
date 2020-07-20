@@ -1,3 +1,4 @@
+import Anchorage
 import UIKit
 
 protocol HomeDisplayLogic: AnyObject {
@@ -5,6 +6,23 @@ protocol HomeDisplayLogic: AnyObject {
 }
 
 final class HomeCollectionViewController: UICollectionViewController {
+
+    private let activityIndicatorView = UIActivityIndicatorView(style: .large)
+    private lazy var stackView: UIStackView = {
+        StackViewBuilder {
+            $0.alignment = .center
+            $0.distribution = .fill
+            $0.arrangedSubviews = [activityIndicatorView, errorMessageLabel]
+        }.build()
+    }()
+    private let errorMessageLabel: UILabel = {
+        let label = UILabel()
+        label.font = .body1
+        label.textAlignment = .center
+        label.textColor = DesignSystem.Color.secondaryTextColor
+        label.numberOfLines = 0
+        return label
+    }()
 
     private let presenter: HomePresentationLogic
 
@@ -17,8 +35,12 @@ final class HomeCollectionViewController: UICollectionViewController {
     required init?(coder: NSCoder) { nil }
 
     override func viewDidLoad() {
-        presenter.presentPlaces(request: .init())
         setup()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        startLoading()
+        presenter.presentPlaces(request: .init())
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -32,12 +54,46 @@ final class HomeCollectionViewController: UICollectionViewController {
     }
 
     private func setup() {
+        setupSubviews()
+
         (collectionView?.collectionViewLayout as? PinterestLayout)?.delegate = self
 
         title = L10n.Home.NavBar.title.uppercased()
         collectionView.backgroundColor = .systemBackground
+        view.backgroundColor = .systemBackground
         collectionView?.contentInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
         collectionView.register(PlaceCell.self, forCellWithReuseIdentifier: PlaceCell.identifier)
+    }
+
+    private func setupSubviews() {
+        view.addSubview(stackView)
+        stackView.centerAnchors == view.centerAnchors
+        stackView.horizontalAnchors >= view.horizontalAnchors + 24
+
+        errorMessageLabel.isHidden = true
+        activityIndicatorView.isHidden = false
+        activityIndicatorView.hidesWhenStopped = true
+        activityIndicatorView.startAnimating()
+    }
+
+    private func showError(message: String) {
+        errorMessageLabel.text = message
+        errorMessageLabel.setHidden(false)
+        activityIndicatorView.setHidden(true)
+        stackView.setHidden(false)
+        collectionView.setHidden(true)
+    }
+
+    private func startLoading() {
+        errorMessageLabel.setHidden(true)
+        activityIndicatorView.setHidden(false)
+        stackView.setHidden(false)
+        collectionView.setHidden(true)
+    }
+
+    private func showContent() {
+        stackView.setHidden(true)
+        collectionView.setHidden(false)
     }
 }
 
@@ -70,8 +126,9 @@ extension HomeCollectionViewController: HomeDisplayLogic {
         switch viewModel {
         case .content(let items):
             self.items = items
-        case .empty:
-            break
+            showContent()
+        case .empty(let message):
+            showError(message: message)
         }
     }
 }
